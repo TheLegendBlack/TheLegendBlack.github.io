@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+    <title> Shopping</title>
+    <h1>Shopping term</h1>
+  </head>
+  <body>
+    <div>
+        <label>
+            <input type="checkbox"
+                   name ="important"
+                   value=""
+                   id ="important" />
+            Is important
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="checkbox"
+                   name ="groceries"
+                   value=""
+                   id ="groceries" />
+            Can be bought in groceries
+        </label>
+    </div>
+    <div>
+        <p><label>
+        Item to buy
+        <input id="sho" type="text" 
+               placeholder="" />
+        </label>
+        <button type="button" onclick="addItem()">Add</button></p>
+        <p><label>
+                Item to remove
+                <input id="remove" type="number" 
+                       placeholder="" />
+                </label>
+                <button type="button" onclick="removeItem()">Remove</button></p>
+        <h3> Shopping list:</h3>
+        <ul id="emp">
+        </ul>
+    <script src="script.js"></script>
+    </div>
+  </body>
